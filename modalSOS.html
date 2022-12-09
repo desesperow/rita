@@ -1,0 +1,169 @@
+
+ <!-- Modal Body -->
+ <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+ <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content" style="width: 1038px; height: 811px;background:#EAEAEA; border-radius:20px">
+            <div class="text-center modal-header">
+                <h5 class="modal-title " id="modalTitleId"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img style="box-sizing: border-box;
+
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                left: 39px;
+                top: 102px;
+                
+                background: url(pancakes.jpg);
+                border: 1px solid #000000;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                border-radius: 15px;" src="aceito.png"></img>
+                <p style="position: absolute;
+                width: 384px;
+                height: 90px;
+                left: 334px;
+                top: 3px;
+                
+                font-family: 'Imprima';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 58px;
+                
+                color: #000000;
+                "
+                class="text-center">Panquecas</p>
+                <p style="position: absolute;
+        
+                left: 260px;
+                top: 114px;
+                
+                font-family: 'Imprima';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 46px;
+                
+                color: #000000;
+                ">Escolher topping:</p>
+                
+                <input name="topping" style="position: absolute;
+                left: 260px;
+                top: 175px;
+                color: #655A5A;
+                " type="radio"><p style="position: absolute;
+                left: 280px;
+                top: 168px;
+                color: #655A5A;
+                " >Chocolate</p>
+                <input name="topping" style="position: absolute;
+                left: 260px;
+                top: 210px;
+                color: #655A5A;
+                " type="radio"><p style="position: absolute;
+                left: 280px;
+                top: 203px;
+                color: #655A5A;
+                " >Morango</p>
+                <input name="topping" style="position: absolute;
+                left: 260px;
+                top: 245px;
+                color: #655A5A;
+                " type="radio"><p style="position: absolute;
+                left: 280px;
+                top: 238px;
+                color: #655A5A;
+                ">Caramelo</p>
+                <input name="topping" style="position: absolute;
+                left: 260px;
+                top: 280px;
+                color: #655A5A;
+                " type="radio"><p style="position: absolute;
+                left: 280px;
+                top: 273px;
+                color: #655A5A;
+                " >Xarope</p>
+
+<p style="position: absolute;
+left: 550px;
+top: 114px;
+
+font-family: 'Imprima';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 46px;
+
+color: #000000;
+">Restrições alimentares:</p>
+
+<input name="restr" style="position: absolute;
+left: 550px;
+top: 175px;
+color: #655A5A;
+" type="radio"><p style="position: absolute;
+left: 570px;
+top: 168px;
+color: #655A5A;
+" >Nenhuma</p>
+<input name="restr" style="position: absolute;
+left: 550px;
+top: 210px;
+color: #655A5A;
+" type="radio"><p style="position: absolute;
+left: 570px;
+top: 203px;
+color: #655A5A;
+" >Vegetariano</p>
+<input name="restr" style="position: absolute;
+left: 550px;
+top: 245px;
+color: #655A5A;
+" type="radio"><p style="position: absolute;
+left: 570px;
+top: 238px;
+color: #655A5A;
+">Vegan</p>
+<input name="restr" style="position: absolute;
+left: 550px;
+top: 280px;
+color: #655A5A;
+" type="radio"id="outros"><p style="position: absolute;
+left: 570px;
+top: 273px;
+color: #655A5A;
+" >Outros:</p>
+
+<label for="outros"><input style="height:40px; width:375px; background-color: #D9D9D9; left: 550px;
+top: 305px; position: absolute;" type="text"></label>
+
+            </div>
+            <div class="modal-footer" style="padding-right:100px">
+                <button type="button" style="vertical-align: middle;background: #C29846; border-radius: 20px; width:175px; height:60px;" class="btn btn-secondary text-center" data-bs-dismiss="modal"><span class="text-center" style="font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 48px;
+                    text-align: center;
+                    vertical-align: middle;
+                    color: #FFFFFF;
+                    ">Adicionar</span></button>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+ 
+ <!-- Optional: Place to the bottom of scripts -->
+ <script>
+    const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+    
+    
+   
+     <!-- Modal trigger button -->
+ <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+   Launch
+ </button>
